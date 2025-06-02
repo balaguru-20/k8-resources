@@ -14,7 +14,7 @@ spec:
   - protocol: TCP
     port: 80 # service port
     targetPort: 80
-    NodePort: 30007 # Range 30000 to 32767
+    nodePort: 30007 # Range 30000 to 32767
 ---
 kind: Pod
 apiVersion: v1

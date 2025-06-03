@@ -14,13 +14,13 @@ spec:
     matchLabels:
       app: frontend
       tier: web
-    # pod template
-    template:
-      metadata:
-        labels:
-          app: frontend
-          tier: web
-      spec:
-        containers:
-        - name: nginx
-          image: nginx
+  # pod template
+  template:
+    metadata:
+      labels:
+        app: frontend
+        tier: web
+    spec:
+      containers:
+      - name: nginx
+        image: nginx

@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: balaguru20/deployment:1.0.0 # /repo/dockerfiles\DEPLOYMENT\Dockerfile
+        image: balaguru20/deployment:2.0.0 # /repo/dockerfiles\DEPLOYMENT\Dockerfile
         ports:
         - containerPort: 80
 ---

@@ -8,14 +8,18 @@ metadata:
     tier: frontend
     purpose: deployment
 spec:
-  replicas:
+  replicas: 3
   selector:
     matchLabels:
       app: nginx
+      tier: frontend
+      purpose: deployment
   template:
     metadata:
       labels:
         app: nginx
+        tier: frontend
+        purpose: deployment
     spec:
       containers:
       - name: nginx

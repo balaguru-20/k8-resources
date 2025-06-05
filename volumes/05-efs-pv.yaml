@@ -2,15 +2,14 @@ apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: efs-static
-
-  spec:
-    capacity:
-      storage: 5Gi
-    volumeMode: Filesystem
-    accessModes:
-      - ReadWriteOnce
-    storageClassName: ""
-    persistentVolumeReclaimPolicy: Retain
-    csi:
-      driver: efs.csi.aws.com
-      volumeHandle: fs-0108a14b5038a70eb # created efs id
+spec:
+  capacity:
+    storage: 5Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: ""
+  persistentVolumeReclaimPolicy: Retain
+  csi:
+    driver: efs.csi.aws.com
+    volumeHandle: fs-0108a14b5038a70eb # created efs id

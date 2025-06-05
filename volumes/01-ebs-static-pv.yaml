@@ -3,7 +3,7 @@ kind: PersistentVolume
 metadata:
   name: ebs-static
 
-spce:
+spec:
   accessModes:
   - ReadWriteOnce
   capacity:

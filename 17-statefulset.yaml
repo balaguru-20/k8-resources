@@ -18,7 +18,7 @@ kind: StatefulSet
 metadata:
   name: nginx
 spec:
-  selectors:
+  selector:
     matchLabels:
       app: nginx
       demo: statefulset # has to match .spec.template.metadata.labels
